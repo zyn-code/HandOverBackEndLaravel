@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
     "\\app\\Models",
-    "\\config",
-    "\\resources\\views",
     "\\routes"
   ],
-  "SelectedNode": "\\config\\database.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\AuthController.php",
   "PreviewInSolutionExplorer": false
 }
