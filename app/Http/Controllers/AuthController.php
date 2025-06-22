@@ -30,7 +30,6 @@ class AuthController extends Controller
         return response()->json(['message' => 'User registered successfully', 'user' => $user]);
     }
 
-    // Sign in
     public function login(Request $request)
 {
     $credentials = $request->only('email', 'password');
@@ -39,11 +38,17 @@ class AuthController extends Controller
         return response()->json(['error' => 'Unauthorized'], 401);
     }
 
+    $user = auth()->user();
+
     return response()->json([
         'access_token' => $token,
-        'token_type' => 'bearer',
-        'expires_in' => auth('api')->factory()->getTTL() * 60
+        'token_type'   => 'bearer',
+        'expires_in'   => auth('api')->factory()->getTTL() * 60,
+        'user_type'    => $user->user_type, 
+        'user'         => $user
     ]);
+}
+
 }
 
     // Logout
