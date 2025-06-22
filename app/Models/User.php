@@ -6,7 +6,6 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-//use Laravel\Sanctum\HasApiTokens; // Optional if using API authentication
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
@@ -17,6 +16,7 @@ class User extends Authenticatable implements JWTSubject
         'name',
         'email',
         'password',
+        'user_type', // ✅ added
     ];
 
     protected $hidden = [
@@ -27,7 +27,8 @@ class User extends Authenticatable implements JWTSubject
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-        public function getJWTIdentifier()
+
+    public function getJWTIdentifier()
     {
         return $this->getKey();
     }
@@ -35,5 +36,17 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    // ✅ contractor profile relationship
+    public function contractor()
+    {
+        return $this->hasOne(Contractor::class);
+    }
+
+    // ✅ check user role
+    public function isContractor()
+    {
+        return $this->user_type === 'contractor';
     }
 }

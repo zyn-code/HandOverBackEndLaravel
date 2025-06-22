@@ -7,8 +7,10 @@
     "\\app\\Http\\Middleware",
     "\\app\\Models",
     "\\config",
+    "\\database",
+    "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\config\\auth.php",
+  "SelectedNode": "\\database\\migrations\\2025_06_22_211842_add_user_type_to_users_table.php",
   "PreviewInSolutionExplorer": false
 }
