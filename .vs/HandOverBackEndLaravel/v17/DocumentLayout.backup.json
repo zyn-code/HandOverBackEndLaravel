@@ -50,8 +50,7 @@
               "RelativeToolTip": "app\\Http\\Controllers\\AuthController.php",
               "ViewState": "AgIAABwAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-21T09:27:05.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T09:27:05.005Z"
             },
             {
               "$type": "Document",
@@ -109,7 +108,7 @@
               "RelativeDocumentMoniker": "routes\\web.php",
               "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php",
               "RelativeToolTip": "routes\\web.php",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBUAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
               "WhenOpened": "2025-06-21T08:43:12.176Z",
               "EditorCaption": ""
