@@ -11,6 +11,6 @@
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\database\\migrations\\2025_06_22_211842_add_user_type_to_users_table.php",
+  "SelectedNode": "\\app\\Models\\User.php",
   "PreviewInSolutionExplorer": false
 }
