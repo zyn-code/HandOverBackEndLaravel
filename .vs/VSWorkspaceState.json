@@ -6,8 +6,9 @@
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Middleware",
     "\\app\\Models",
+    "\\config",
     "\\routes"
   ],
-  "SelectedNode": "\\routes\\api.php",
+  "SelectedNode": "\\config\\auth.php",
   "PreviewInSolutionExplorer": false
 }
