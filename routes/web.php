@@ -19,6 +19,4 @@ Route::get('/', function () {
     return 'Laravel backend is working!';
 });
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login',    [AuthController::class, 'login']);
-Route::post('/logout',   [AuthController::class, 'logout'])->middleware('auth');
+
