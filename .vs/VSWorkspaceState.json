@@ -8,5 +8,6 @@
     "\\app\\Models",
     "\\routes"
   ],
+  "SelectedNode": "\\app\\Http\\Controllers\\AuthController.php",
   "PreviewInSolutionExplorer": false
 }
