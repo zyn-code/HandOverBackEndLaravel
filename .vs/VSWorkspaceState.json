@@ -8,6 +8,6 @@
     "\\app\\Models",
     "\\routes"
   ],
-  "SelectedNode": "\\routes\\channels.php",
+  "SelectedNode": "\\routes\\api.php",
   "PreviewInSolutionExplorer": false
 }
