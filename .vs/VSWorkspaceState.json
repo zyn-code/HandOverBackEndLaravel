@@ -11,6 +11,6 @@
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Models\\User.php",
+  "SelectedNode": "\\routes\\api.php",
   "PreviewInSolutionExplorer": false
 }
