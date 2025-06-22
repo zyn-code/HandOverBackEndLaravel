@@ -31,25 +31,25 @@ class AuthController extends Controller
     }
 
     public function login(Request $request)
-{
-    $credentials = $request->only('email', 'password');
+    {
+        $credentials = $request->only('email', 'password');
 
-    if (! $token = JWTAuth::attempt($credentials)) {
-        return response()->json(['error' => 'Unauthorized'], 401);
+        if (! $token = JWTAuth::attempt($credentials)) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
+        $user = auth()->user();
+
+        return response()->json([
+            'access_token' => $token,
+            'token_type'   => 'bearer',
+            'expires_in'   => auth('api')->factory()->getTTL() * 60,
+            'user_type'    => $user->user_type, 
+            'user'         => $user
+        ]);
     }
 
-    $user = auth()->user();
 
-    return response()->json([
-        'access_token' => $token,
-        'token_type'   => 'bearer',
-        'expires_in'   => auth('api')->factory()->getTTL() * 60,
-        'user_type'    => $user->user_type, 
-        'user'         => $user
-    ]);
-}
-
-}
 
     // Logout
     public function logout(Request $request)
