@@ -16,7 +16,7 @@ use App\Http\Controllers\AuthController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Laravel backend is working!';
 });
 Route::post('/register', [AuthController::class, 'register']);
 //Route::post('/login',    [AuthController::class, 'login']);
