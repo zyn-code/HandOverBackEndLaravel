@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EmergencyService extends Model
+class VehicleService extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class EmergencyService extends Model
      *
      * @var string
      */
-    protected $table = 'emergency_services';
+    protected $table = 'vehicle_services';
 
     /**
      * The attributes that are mass assignable.

@@ -1,17 +1,27 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class EmergencyService extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'emergency_services';
 
-    public function tasks()
-    {
-        return $this->hasMany(Task::class);
-    }
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'service_name',
+    ];
 }

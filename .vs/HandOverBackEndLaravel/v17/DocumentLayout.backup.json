@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\ServiceController.php",
               "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\ServiceController.php",
               "RelativeToolTip": "app\\Http\\Controllers\\ServiceController.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
               "WhenOpened": "2025-06-23T18:00:15.982Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "app\\Models\\BuildingService.php",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-23T18:02:30.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T18:02:30.007Z"
             },
             {
               "$type": "Document",
