@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\Service;
+use App\Models\BuildingService;
+use App\Models\VehicleService;
+use App\Models\EmergencyService;
 
 class ServiceController extends Controller
 {

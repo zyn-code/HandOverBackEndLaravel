@@ -5,11 +5,8 @@
     "\\app\\Http",
     "\\app\\Http\\Controllers",
     "\\app\\Models",
-    "\\database\\factories",
-    "\\database\\migrations",
-    "\\database\\seeders",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Models\\EmergencyService.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\ServiceController.php",
   "PreviewInSolutionExplorer": false
 }
