@@ -3,7 +3,7 @@
     "",
     "\\app",
     "\\app\\Http",
-    "\\app\\Http\\Controllers",
+    "\\app\\Http\\Middleware",
     "\\app\\Models",
     "\\database",
     "\\database\\factories",
