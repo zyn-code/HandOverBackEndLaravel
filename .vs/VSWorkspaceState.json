@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\Http",
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Middleware",
-    "\\app\\Models",
-    "\\config",
-    "\\database",
+    "\\database\\factories",
     "\\database\\migrations",
+    "\\database\\seeders",
     "\\routes"
   ],
-  "SelectedNode": "\\database\\migrations\\2025_06_23_133139_create_offers_table.php",
+  "SelectedNode": "\\routes\\api.php",
   "PreviewInSolutionExplorer": false
 }
