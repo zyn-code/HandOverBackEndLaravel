@@ -10,11 +10,22 @@ class Cors
 {
     /**
      * Handle an incoming request.
-     *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+        // Si c'est une pré-requête OPTIONS, on renvoie immédiatement
+        if ($request->getMethod() === 'OPTIONS') {
+            $response = response('', 204);
+        } else {
+            $response = $next($request);
+        }
+
+        // On ajoute les en-têtes CORS à chaque réponse
+        return $response
+            ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS')
+            ->header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With')
+            ->header('Access-Control-Expose-Headers', 'Authorization')
+            ->header('Access-Control-Max-Age', '3600');
     }
 }

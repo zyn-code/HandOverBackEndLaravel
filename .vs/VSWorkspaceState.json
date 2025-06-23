@@ -4,9 +4,10 @@
     "\\app",
     "\\app\\Http",
     "\\app\\Http\\Controllers",
+    "\\app\\Http\\Middleware",
     "\\app\\Models",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\AuthController.php",
+  "SelectedNode": "\\app\\Http\\Kernel.php",
   "PreviewInSolutionExplorer": false
 }
