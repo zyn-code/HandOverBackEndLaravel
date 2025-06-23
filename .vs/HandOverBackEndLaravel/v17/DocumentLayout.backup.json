@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172325_create_emergency_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\migrations\\2025_06_23_172325_create_emergency_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172301_create_building_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\migrations\\2025_06_23_172301_create_building_services_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\OfferController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\OfferController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
@@ -23,6 +35,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "2025_06_23_172325_create_emergency_services_table.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
+              "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
+              "RelativeToolTip": "database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-23T17:25:16.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "2025_06_23_172314_create_vehicle_services_table.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
+              "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
+              "RelativeToolTip": "database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-23T17:25:03.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "2025_06_23_172301_create_building_services_table.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172301_create_building_services_table.php",
+              "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172301_create_building_services_table.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172301_create_building_services_table.php",
+              "RelativeToolTip": "database\\migrations\\2025_06_23_172301_create_building_services_table.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-23T17:24:39.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OfferController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\OfferController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\OfferController.php",
