@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\Offer;
+use Illuminate\Support\Facades\Auth;
 
 class OfferController extends Controller
 {

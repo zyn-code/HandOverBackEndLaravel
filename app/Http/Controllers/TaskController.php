@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\Task;
+use Illuminate\Support\Facades\Auth;
+
 
 class TaskController extends Controller
 {
