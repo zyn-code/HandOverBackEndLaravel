@@ -5,14 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class Offer extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = [
+        'task_id',
+        'contractor_id',
+        'price',
+        'comments',
+        'status',
+    ];
 
-    public function tasks()
+    public function task()
     {
-        return $this->hasMany(Task::class);
+        return $this->belongsTo(Task::class);
+    }
+
+    public function contractor()
+    {
+        return $this->belongsTo(Contractor::class);
     }
 }
