@@ -15,4 +15,19 @@ class ServiceController extends Controller
     {
         return response()->json(Service::all());
     }
+        public function buildingServices(): JsonResponse
+    {
+        $services = BuildingService::all();
+        return response()->json($services);
+    }
+    public function vehicleServices(): JsonResponse
+    {
+        $services = VehicleService::all();
+        return response()->json($services);
+    }
+    public function emergencyServices(): JsonResponse
+    {
+        $services = EmergencyService::all();
+        return response()->json($services);
+    }
 }

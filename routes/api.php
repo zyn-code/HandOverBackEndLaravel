@@ -21,7 +21,9 @@ use App\Http\Controllers\OfferController;
 Route::post('/contractor/register', [ContractorAuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login',    [AuthController::class, 'login']);
-
+Route::get('services/building', [ServiceController::class, 'buildingServices']);
+Route::get('services/vehicle',  [ServiceController::class, 'vehicleServices']);
+Route::get('services/emergency', [ServiceController::class, 'emergencyServices']);
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);

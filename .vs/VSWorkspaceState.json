@@ -5,12 +5,11 @@
     "\\app\\Http",
     "\\app\\Http\\Controllers",
     "\\app\\Models",
-    "\\database",
     "\\database\\factories",
     "\\database\\migrations",
     "\\database\\seeders",
     "\\routes"
   ],
-  "SelectedNode": "\\database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
+  "SelectedNode": "\\app\\Models\\EmergencyService.php",
   "PreviewInSolutionExplorer": false
 }
