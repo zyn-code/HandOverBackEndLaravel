@@ -3,7 +3,7 @@
     "",
     "\\app",
     "\\app\\Http",
-    "\\app\\Http\\Middleware",
+    "\\app\\Http\\Controllers",
     "\\app\\Models",
     "\\database",
     "\\database\\factories",
@@ -11,6 +11,6 @@
     "\\database\\seeders",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Models\\Service.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\OfferController.php",
   "PreviewInSolutionExplorer": false
 }

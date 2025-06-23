@@ -7,6 +7,7 @@ use App\Models\Contractor;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
+use App\Models\Service;
 
 class ServiceController extends Controller
 {
