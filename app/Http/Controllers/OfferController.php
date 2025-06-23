@@ -42,15 +42,9 @@ class OfferController extends Controller
         $offer = Offer::findOrFail($offerId);
         $task  = $offer->task;
 
-        if ($task->user_id !== Auth::id()) {
-    return response()->json([
-        'error' => 'Unauthorized',
-        'debug' => [
-            'task_user_id' => $task->user_id,
-            'auth_id'      => Auth::id()
-        ]
-    ], 403);
-}
+        if ($task->user_id != Auth::id()) {
+            return response()->json(['error' => 'Unauthorized'], 403);
+        }
 
 
         $offer->status = $request->response;
