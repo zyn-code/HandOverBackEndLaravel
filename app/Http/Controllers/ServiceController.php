@@ -11,7 +11,7 @@ use App\Models\Service;
 use App\Models\BuildingService;
 use App\Models\VehicleService;
 use App\Models\EmergencyService;
-use App\Http\Controllers\Controller
+use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 
 class ServiceController extends Controller
