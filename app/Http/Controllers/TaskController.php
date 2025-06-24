@@ -49,8 +49,8 @@ class TaskController extends Controller
 
     public function availableTasks()
     {
-        $contractor = Contractor::where('user_id', Auth::id())->first();
-        if (! $contractor) return response()->json(['error' => 'Contractor not found'], 404);
+        //$contractor = Contractor::where('user_id', Auth::id())->first();
+        //if (! $contractor) return response()->json(['error' => 'Contractor not found'], 404);
 
         return response()->json(Task::where('status', 'pending')
             ->whereIn('service_id', $contractor->service_categories)->get());
