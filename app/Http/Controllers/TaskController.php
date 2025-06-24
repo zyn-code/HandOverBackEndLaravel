@@ -14,24 +14,33 @@ use Illuminate\Support\Facades\Auth;
 class TaskController extends Controller
 {
     public function create(Request $request)
-    {
-        $request->validate([
-            'service_id'  => 'required|exists:services,id',
-            'title'       => 'required|string',
-            'description' => 'nullable|string',
-            'location'    => 'required|string',
-        ]);
+{
+    $request->validate([
+        'service_id'   => 'required|exists:services,id',
+        'title'        => 'required|string',
+        'description'  => 'nullable|string',
+        'location'     => 'required|string',
+        'casa'         => 'nullable|string',      // Adjust validation as needed
+        'car_brand'    => 'nullable|string',
+        'car_category' => 'nullable|string',
+        'fuel_type'    => 'nullable|string',
+    ]);
 
-        $task = Task::create([
-            'user_id'     => Auth::id(),
-            'service_id'  => $request->service_id,
-            'title'       => $request->title,
-            'description' => $request->description,
-            'location'    => $request->location,
-        ]);
+    $task = Task::create([
+        'user_id'      => Auth::id(),
+        'service_id'   => $request->service_id,
+        'title'        => $request->title,
+        'description'  => $request->description,
+        'location'     => $request->location,
+        'casa'         => $request->casa,
+        'car_brand'    => $request->car_brand,
+        'car_category' => $request->car_category,
+        'fuel_type'    => $request->fuel_type,
+    ]);
 
-        return response()->json(['message' => 'Task created successfully', 'task' => $task]);
-    }
+    return response()->json(['message' => 'Task created successfully', 'task' => $task]);
+}
+
 
     public function myTasks()
     {
