@@ -10,6 +10,7 @@ use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ContactController;
 use App\Models\Casa;
 use App\Models\CarBrand;
+use App\Models\CarCategory;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::get('/casas', function () {
 });
 Route::get('/car-brands', function () {
     return response()->json(CarBrand::all());
+});
+Route::get('/car-categories', function () {
+    return response()->json(CarCategory::all());
 });
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {
