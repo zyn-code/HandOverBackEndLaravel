@@ -6,9 +6,11 @@
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Middleware",
     "\\app\\Mail",
+    "\\config",
     "\\public",
     "\\public\\Icons",
     "\\routes"
   ],
+  "SelectedNode": "\\.env.example",
   "PreviewInSolutionExplorer": false
 }
