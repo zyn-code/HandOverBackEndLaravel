@@ -11,6 +11,7 @@ use App\Http\Controllers\ContactController;
 use App\Models\Casa;
 use App\Models\CarBrand;
 use App\Models\CarCategory;
+use App\Models\FuelType;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,9 @@ Route::get('/car-brands', function () {
 });
 Route::get('/car-categories', function () {
     return response()->json(CarCategory::all());
+});
+Route::get('/fuel-types', function () {
+    return response()->json(FuelType::all());
 });
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {
