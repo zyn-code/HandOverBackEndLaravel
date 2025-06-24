@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app\\Models",
     "\\database",
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\routes\\api.php",
+  "SelectedNode": "\\database\\migrations\\2025_06_24_202258_create_car_categories_table.php",
   "PreviewInSolutionExplorer": false
 }
