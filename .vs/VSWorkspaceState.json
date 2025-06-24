@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
     "\\app\\Models",
     "\\database",
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Models\\FuelType.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\AuthController.php",
   "PreviewInSolutionExplorer": false
 }

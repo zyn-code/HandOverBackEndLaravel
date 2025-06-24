@@ -16,6 +16,10 @@ class Task extends Model
         'description',
         'location',
         'status',
+        'casa',
+        'car_brand',
+        'car_category',
+        'fuel_type',
     ];
 
     public function user()

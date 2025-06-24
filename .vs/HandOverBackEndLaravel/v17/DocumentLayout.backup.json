@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\api.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\FuelType.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Models\\FuelType.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_211207_create_fuel_types_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\migrations\\2025_06_24_211207_create_fuel_types_table.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarCategory.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Models\\CarCategory.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -49,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\ContractorAuthController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\ContractorAuthController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\BuildingService.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -118,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,15 +134,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarCategory.php",
-              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarCategory.php",
-              "RelativeDocumentMoniker": "app\\Models\\CarCategory.php",
-              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarCategory.php",
-              "RelativeToolTip": "app\\Models\\CarCategory.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FuelType.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\FuelType.php",
+              "RelativeDocumentMoniker": "app\\Models\\FuelType.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\FuelType.php",
+              "RelativeToolTip": "app\\Models\\FuelType.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-24T20:25:43.033Z",
+              "WhenOpened": "2025-06-24T21:16:04.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "web.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php",
+              "RelativeDocumentMoniker": "routes\\web.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php",
+              "RelativeToolTip": "routes\\web.php",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-23T18:34:22.913Z",
               "EditorCaption": ""
             },
             {
@@ -145,7 +166,7 @@
               "RelativeDocumentMoniker": "routes\\api.php",
               "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\api.php",
               "RelativeToolTip": "routes\\api.php",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
               "WhenOpened": "2025-06-23T18:01:24.79Z",
               "EditorCaption": ""
@@ -153,6 +174,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "2025_06_24_211207_create_fuel_types_table.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_211207_create_fuel_types_table.php",
+              "RelativeDocumentMoniker": "database\\migrations\\2025_06_24_211207_create_fuel_types_table.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_211207_create_fuel_types_table.php",
+              "RelativeToolTip": "database\\migrations\\2025_06_24_211207_create_fuel_types_table.php",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-24T21:15:21.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarCategory.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarCategory.php",
+              "RelativeDocumentMoniker": "app\\Models\\CarCategory.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarCategory.php",
+              "RelativeToolTip": "app\\Models\\CarCategory.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-24T20:25:43.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "2025_06_24_202258_create_car_categories_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_202258_create_car_categories_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_24_202258_create_car_categories_table.php",
@@ -160,12 +206,11 @@
               "RelativeToolTip": "database\\migrations\\2025_06_24_202258_create_car_categories_table.php",
               "ViewState": "AgIAAAUAAAAAAAAAAAAYwA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-24T20:24:11.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T20:24:11.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CarBrand.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\CarBrand.php",
               "RelativeDocumentMoniker": "app\\Models\\CarBrand.php",
@@ -173,12 +218,11 @@
               "RelativeToolTip": "app\\Models\\CarBrand.php",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-24T20:15:45.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T20:15:45.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "2025_06_24_201321_create_car_brands_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_201321_create_car_brands_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_24_201321_create_car_brands_table.php",
@@ -190,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Casa.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\Casa.php",
               "RelativeDocumentMoniker": "app\\Models\\Casa.php",
@@ -202,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "2025_06_24_200303_create_casas_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_24_200303_create_casas_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_24_200303_create_casas_table.php",
@@ -214,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": ".env.example",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\.env.example",
               "RelativeDocumentMoniker": ".env.example",
@@ -226,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ContractorAuthController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\ContractorAuthController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\ContractorAuthController.php",
@@ -238,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ContactController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\ContactController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\ContactController.php",
@@ -250,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ContactMessageMailable.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Mail\\ContactMessageMailable.php",
               "RelativeDocumentMoniker": "app\\Mail\\ContactMessageMailable.php",
@@ -262,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "mail.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\config\\mail.php",
               "RelativeDocumentMoniker": "config\\mail.php",
@@ -274,19 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "web.php",
-              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php",
-              "RelativeDocumentMoniker": "routes\\web.php",
-              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\web.php",
-              "RelativeToolTip": "routes\\web.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-23T18:34:22.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Service.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\Service.php",
               "RelativeDocumentMoniker": "app\\Models\\Service.php",
@@ -298,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "2025_06_23_172301_create_building_services_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172301_create_building_services_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172301_create_building_services_table.php",
@@ -310,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "BuildingService.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\BuildingService.php",
               "RelativeDocumentMoniker": "app\\Models\\BuildingService.php",
@@ -322,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ServiceController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\ServiceController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\ServiceController.php",
@@ -334,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Kernel.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Kernel.php",
               "RelativeDocumentMoniker": "app\\Http\\Kernel.php",
@@ -346,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "AuthController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\AuthController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\AuthController.php",
@@ -358,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "channels.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\routes\\channels.php",
               "RelativeDocumentMoniker": "routes\\channels.php",
@@ -370,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "VehicleService.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\VehicleService.php",
               "RelativeDocumentMoniker": "app\\Models\\VehicleService.php",
@@ -382,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Offer.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\Offer.php",
               "RelativeDocumentMoniker": "app\\Models\\Offer.php",
@@ -394,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "EmergencyService.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Models\\EmergencyService.php",
               "RelativeDocumentMoniker": "app\\Models\\EmergencyService.php",
@@ -406,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Cors.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Middleware\\Cors.php",
               "RelativeDocumentMoniker": "app\\Http\\Middleware\\Cors.php",
@@ -418,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "2025_06_23_172325_create_emergency_services_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172325_create_emergency_services_table.php",
@@ -430,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "2025_06_23_172314_create_vehicle_services_table.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
               "RelativeDocumentMoniker": "database\\migrations\\2025_06_23_172314_create_vehicle_services_table.php",
@@ -442,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "OfferController.php",
               "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Controllers\\OfferController.php",
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\OfferController.php",
