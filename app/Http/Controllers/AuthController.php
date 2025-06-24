@@ -29,7 +29,7 @@ class AuthController extends Controller
         $token = JWTAuth::fromUser($user);
 
         return response()->json(['message' => 'User registered successfully',
-                    'token'   => $token,
+                    'access_token'   => $token,
                     'user' => $user]);
     }
 

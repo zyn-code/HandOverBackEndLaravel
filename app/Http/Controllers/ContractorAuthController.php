@@ -50,7 +50,7 @@ class ContractorAuthController extends Controller
 
         return response()->json([
             'message' => 'Contractor registered successfully',
-            'token'   => $token,
+            'access_token'   => $token,
             'user'    => $user->load('contractor')
         ], 201);
     }
