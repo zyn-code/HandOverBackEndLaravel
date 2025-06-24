@@ -21,9 +21,18 @@ class ContactMessageMailable extends Mailable
         $this->body  = $body;
     }
 
-    public function build(): self
-    {
-        return $this->subject('New contact message')
-                    ->replyTo($this->email, $this->name);
-    }
+public function build(): self
+{
+    return $this->subject('New contact message')
+        ->replyTo($this->email, $this->name)
+        ->html(
+            <<<HTML
+                <p><strong>Name:</strong> {$this->name}</p>
+                <p><strong>Email:</strong> {$this->email}</p>
+                <p><strong>Message:</strong></p>
+                <p>{$this->body}</p>
+            HTML
+        );
+}
+
 }
