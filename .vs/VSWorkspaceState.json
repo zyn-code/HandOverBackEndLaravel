@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app\\Http",
+    "\\app",
+    "\\app\\Models",
     "\\database",
     "\\database\\migrations",
-    "\\public\\Icons",
     "\\routes"
   ],
-  "SelectedNode": "\\database\\migrations\\2025_06_24_200303_create_casas_table.php",
+  "SelectedNode": "\\routes\\api.php",
   "PreviewInSolutionExplorer": false
 }

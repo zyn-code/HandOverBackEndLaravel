@@ -8,6 +8,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ContactController;
+use App\Models\Casa;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,9 @@ Route::get('services/building', [ServiceController::class, 'buildingServices']);
 Route::get('services/vehicle',  [ServiceController::class, 'vehicleServices']);
 Route::get('services/emergency', [ServiceController::class, 'emergencyServices']);
 Route::post('/contact', ContactController::class)->name('apicontact');
-
+Route::get('/casas', function () {
+    return response()->json(Casa::all());
+});
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
