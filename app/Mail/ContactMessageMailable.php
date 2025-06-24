@@ -24,7 +24,6 @@ class ContactMessageMailable extends Mailable
     public function build(): self
     {
         return $this->subject('New contact message')
-                    ->replyTo($this->email, $this->name)
-                    ->view('emails.contact');   // simple Blade view (see below)
+                    ->replyTo($this->email, $this->name);
     }
 }
