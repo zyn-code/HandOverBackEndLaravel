@@ -1,16 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
     "\\app\\Http",
-    "\\app\\Http\\Controllers",
-    "\\app\\Http\\Middleware",
-    "\\app\\Mail",
-    "\\config",
-    "\\public",
+    "\\database",
+    "\\database\\migrations",
     "\\public\\Icons",
     "\\routes"
   ],
-  "SelectedNode": "\\.env.example",
+  "SelectedNode": "\\database\\migrations\\2025_06_24_200303_create_casas_table.php",
   "PreviewInSolutionExplorer": false
 }
