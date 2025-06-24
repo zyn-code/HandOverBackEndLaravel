@@ -6,11 +6,10 @@
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Middleware",
     "\\app\\Mail",
-    "\\database\\migrations",
     "\\public",
     "\\public\\Icons",
     "\\routes"
   ],
-  "SelectedNode": "\\.env.example",
+  "SelectedNode": "\\app\\Http\\Controllers\\ContactController.php",
   "PreviewInSolutionExplorer": false
 }
