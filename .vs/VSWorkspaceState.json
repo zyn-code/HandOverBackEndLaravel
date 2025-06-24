@@ -5,9 +5,12 @@
     "\\app\\Http",
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Middleware",
-    "\\app\\Models",
+    "\\app\\Mail",
+    "\\database\\migrations",
+    "\\public",
+    "\\public\\Icons",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Http\\Kernel.php",
+  "SelectedNode": "\\.env.example",
   "PreviewInSolutionExplorer": false
 }
