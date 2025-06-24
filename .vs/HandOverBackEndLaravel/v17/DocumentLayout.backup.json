@@ -74,11 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Kernel.php",
+              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Kernel.php",
+              "RelativeDocumentMoniker": "app\\Http\\Kernel.php",
+              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Kernel.php",
+              "RelativeToolTip": "app\\Http\\Kernel.php",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-06-23T19:16:26.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,21 +103,7 @@
               "RelativeToolTip": "app\\Http\\Middleware\\Cors.php",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwBoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-23T19:16:31.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Kernel.php",
-              "DocumentMoniker": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Kernel.php",
-              "RelativeDocumentMoniker": "app\\Http\\Kernel.php",
-              "ToolTip": "C:\\Users\\k\\source\\repos\\HandOverBackEndLaravel\\app\\Http\\Kernel.php",
-              "RelativeToolTip": "app\\Http\\Kernel.php",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-23T19:16:26.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T19:16:31.014Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "RelativeToolTip": "app\\Http\\Controllers\\AuthController.php",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-06-23T18:35:06.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T18:35:06.108Z"
             },
             {
               "$type": "Document",

@@ -23,5 +23,13 @@ class BuildingService extends Model
      */
     protected $fillable = [
         'service_name',
+        'icon', 
     ];
+    protected $appends = [
+        'icon_url',         
+    ];
+    public function getIconUrlAttribute(): string
+{
+    return asset('Icons/' . $this->icon);  
+}
 }

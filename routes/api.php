@@ -7,6 +7,8 @@ use App\Http\Controllers\ContractorAuthController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\OfferController;
+use App\Http\Controllers\ContactController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -36,4 +38,5 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/available-tasks', [TaskController::class, 'availableTasks']);
     Route::post('/tasks/{taskId}/offer', [OfferController::class, 'makeOffer']);
     Route::post('/offers/{offerId}/respond', [OfferController::class, 'respondToOffer']);
+    Route::post('/contact', ContactController::class)->name('apicontact');
 });
