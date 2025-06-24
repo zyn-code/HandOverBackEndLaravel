@@ -26,6 +26,8 @@ Route::post('/login',    [AuthController::class, 'login']);
 Route::get('services/building', [ServiceController::class, 'buildingServices']);
 Route::get('services/vehicle',  [ServiceController::class, 'vehicleServices']);
 Route::get('services/emergency', [ServiceController::class, 'emergencyServices']);
+Route::post('/contact', ContactController::class)->name('apicontact');
+
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
@@ -38,5 +40,4 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/available-tasks', [TaskController::class, 'availableTasks']);
     Route::post('/tasks/{taskId}/offer', [OfferController::class, 'makeOffer']);
     Route::post('/offers/{offerId}/respond', [OfferController::class, 'respondToOffer']);
-    Route::post('/contact', ContactController::class)->name('apicontact');
 });
