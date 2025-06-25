@@ -30,7 +30,7 @@ class TaskController extends Controller
     $task = Task::create([
         'user_id'      => Auth::id(),
         'service_id'   => $request->service_id,
-        'service_name'   => $request->service_name,
+        'service_name' => $request->service_name,
         'title'        => $request->title,
         'description'  => $request->description,
         'location'     => $request->location,
