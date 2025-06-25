@@ -16,7 +16,7 @@ class TaskController extends Controller
     public function create(Request $request)
 {
     $request->validate([
-        'service_id'   => 'required|exists:services,id',
+        'service_id'   => 'required|string',
         'title'        => 'required|string',
         'description'  => 'nullable|string',
         'location'     => 'required|string',
