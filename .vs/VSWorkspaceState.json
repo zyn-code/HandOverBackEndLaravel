@@ -9,6 +9,6 @@
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Models\\Task.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\OfferController.php",
   "PreviewInSolutionExplorer": false
 }

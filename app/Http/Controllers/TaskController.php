@@ -55,6 +55,6 @@ class TaskController extends Controller
         if (! $contractor) return response()->json(['error' => 'Contractor not found'], 404);
 
         return response()->json(Task::where('status', 'pending')
-            ->whereIn('service_id', $contractor->service_categories)->get());
+            ->whereIn('service_name', $contractor->service_categories)->get());
     }
 }
