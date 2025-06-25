@@ -12,6 +12,9 @@ use App\Models\Casa;
 use App\Models\CarBrand;
 use App\Models\CarCategory;
 use App\Models\FuelType;
+use App\Models\HomeCategory;
+use App\Models\PropertyCondition;
+use App\Models\BuildingMaterial;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +45,15 @@ Route::get('/car-categories', function () {
 });
 Route::get('/fuel-types', function () {
     return response()->json(FuelType::all());
+});
+Route::get('/home-categories', function () {
+    return response()->json(HomeCategory::all());
+});
+Route::get('/property-conditions', function () {
+    return response()->json(PropertyCondition::all());
+});
+Route::get('/building-materials', function () {
+    return response()->json(BuildingMaterial::all());
 });
 // ✅ Protect these routes using JWT (auth:api guard)
 Route::middleware(['auth:api'])->group(function () {

@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\Http",
     "\\app\\Http\\Controllers",
     "\\app\\Models",
+    "\\database",
+    "\\database\\migrations",
     "\\routes"
   ],
   "SelectedNode": "\\routes\\api.php",
