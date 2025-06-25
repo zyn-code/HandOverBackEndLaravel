@@ -16,7 +16,8 @@ class TaskController extends Controller
     public function create(Request $request)
 {
     $request->validate([
-        'service_id'   => 'required|string',
+        'service_id'  => 'required|exists:services,id',
+        'service_name' => 'required|string',
         'title'        => 'required|string',
         'description'  => 'nullable|string',
         'location'     => 'required|string',
@@ -29,6 +30,7 @@ class TaskController extends Controller
     $task = Task::create([
         'user_id'      => Auth::id(),
         'service_id'   => $request->service_id,
+        'service_name'   => $request->service_name,
         'title'        => $request->title,
         'description'  => $request->description,
         'location'     => $request->location,
