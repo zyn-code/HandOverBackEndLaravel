@@ -49,10 +49,12 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/user', function (Request $request) {
         return response()->json($request->user());
     });
-     Route::get('/services', [ServiceController::class, 'index']);
+    Route::get('/services', [ServiceController::class, 'index']);
     Route::post('/tasks', [TaskController::class, 'create']);
     Route::get('/my-tasks', [TaskController::class, 'myTasks']);
     Route::get('/available-tasks', [TaskController::class, 'availableTasks']);
     Route::post('/tasks/{taskId}/offer', [OfferController::class, 'makeOffer']);
     Route::post('/offers/{offerId}/respond', [OfferController::class, 'respondToOffer']);
+    Route::get('/my-offers', [OfferController::class, 'myOffers']);
+
 });

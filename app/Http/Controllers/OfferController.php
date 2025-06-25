@@ -55,4 +55,18 @@ class OfferController extends Controller
 
         return response()->json(['message' => 'Response submitted']);
     }
+    public function myOffers()
+{
+    $contractor = Contractor::where('user_id', Auth::id())->first();
+    if (! $contractor) {
+        return response()->json(['error' => 'Contractor not found'], 404);
+    }
+
+    // On eager-load la relation task pour éviter N+1
+    $offers = Offer::with('task')
+                ->where('contractor_id', $contractor->id)
+                ->get();
+
+    return response()->json($offers);
+}
 }
