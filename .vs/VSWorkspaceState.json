@@ -9,6 +9,6 @@
     "\\database\\migrations",
     "\\routes"
   ],
-  "SelectedNode": "\\database\\migrations\\2025_06_24_211207_create_fuel_types_table.php",
+  "SelectedNode": "\\routes\\api.php",
   "PreviewInSolutionExplorer": false
 }
