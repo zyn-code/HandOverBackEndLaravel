@@ -15,6 +15,7 @@ use App\Models\FuelType;
 use App\Models\HomeCategory;
 use App\Models\PropertyCondition;
 use App\Models\BuildingMaterial;
+use App\Http\Controllers\AdvertisementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,5 +69,7 @@ Route::middleware(['auth:api'])->group(function () {
     Route::post('/tasks/{taskId}/offer', [OfferController::class, 'makeOffer']);
     Route::post('/offers/{offerId}/respond', [OfferController::class, 'respondToOffer']);
     Route::get('/my-offers', [OfferController::class, 'myOffers']);
+    Route::post('/advertisements', [AdvertisementController::class, 'store']);
+    Route::get('/advertisements', [AdvertisementController::class, 'index']);
 
 });
