@@ -31,6 +31,7 @@ use App\Http\Controllers\AdvertisementController;
 Route::post('/contractor/register', [ContractorAuthController::class, 'register']);
 Route::post('/registerclient', [AuthController::class, 'register']);
 Route::post('/login',    [AuthController::class, 'login']);
+Route::post('/verify-totp', [AuthController::class, 'verifyTotp']);
 Route::get('services/building', [ServiceController::class, 'buildingServices']);
 Route::get('services/vehicle',  [ServiceController::class, 'vehicleServices']);
 Route::get('services/emergency', [ServiceController::class, 'emergencyServices']);
