@@ -46,7 +46,7 @@ class TaskController extends Controller
 
     public function myTasks()
     {
-        return response()->json(Task::with('offers')->where('user_id', Auth::id())->get());
+        return response()->json(Task::with('offers')->where('user_id', Auth::id())->orderBy('created_at','desc')->get());
     }
 
     public function availableTasks()
@@ -55,6 +55,6 @@ class TaskController extends Controller
         if (! $contractor) return response()->json(['error' => 'Contractor not found'], 404);
 
         return response()->json(Task::where('status', 'pending')
-            ->whereIn('service_name', $contractor->service_categories)->get());
+            ->whereIn('service_name', $contractor->service_categories)->orderBy('created_at','desc')->get());
     }
 }
