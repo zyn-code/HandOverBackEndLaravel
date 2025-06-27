@@ -16,6 +16,8 @@ use App\Models\HomeCategory;
 use App\Models\PropertyCondition;
 use App\Models\BuildingMaterial;
 use App\Http\Controllers\AdvertisementController;
+use App\Http\Controllers\Api\ColorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +59,7 @@ Route::get('/building-materials', function () {
     return response()->json(BuildingMaterial::all());
 });
 // ✅ Protect these routes using JWT (auth:api guard)
+Route::post('/detect-color', [ColorController::class, 'detect']);
 Route::middleware(['auth:api'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/user', function (Request $request) {
