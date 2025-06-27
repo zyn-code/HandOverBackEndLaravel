@@ -11,18 +11,18 @@ class ColorController extends Controller
 {
     public function detect(Request $request)
     {
-        // 1) Validate & read the uploaded image
+        // 1) Validation et lecture de l’image uploadée
         $request->validate([
-            'image' => 'required|image|max:5120', // up to 5 MB
+            'image' => 'required|image|max:5120', // jusqu’à 5 Mo
         ]);
         $path       = $request->file('image')->getRealPath();
         $imageBytes = file_get_contents($path);
 
-        // 2) Build Azure Color API URL
+        // 2) Construction de l’URL Azure Color API
         $endpoint = config('services.azure_cs.endpoint');
         $url      = rtrim($endpoint, '/') . '/vision/v3.2/analyze?visualFeatures=Color';
 
-        // 3) Call Azure REST API with raw body (no JSON encoding)
+        // 3) Envoi du flux binaire à Azure (sans json_encode)
         $response = Http::withHeaders([
                 'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
                 'Content-Type'             => 'application/octet-stream',
@@ -39,15 +39,15 @@ class ColorController extends Controller
 
         $data = $response->json();
 
-        // 4) Extract Azure’s dominant color info
-        $hexDetected = $data['color']['dominantColorForeground'] ?? null;   // e.g. "#336699"
-        $aiName      = $data['color']['dominantColors'][0] ?? null;         // e.g. "Blue"
+        // 4) Extraction des infos de couleur dominante
+        $hexDetected = $data['color']['dominantColorForeground'] ?? null; // ex. "#336699"
+        $aiName      = $data['color']['dominantColors'][0] ?? null;       // ex. "Blue"
 
-        // 5) Use name-that-color to get closest hex, name, and exact-match
+        // 5) Recherche de la couleur la plus proche
         $interpreter = new ColorInterpreter();
         $closest     = $interpreter->name(ltrim($hexDetected, '#'));
 
-        // 6) Return JSON payload
+        // 6) Réponse JSON
         return response()->json([
             'hex_detected'    => $hexDetected,
             'ai_generic_name' => $aiName,
