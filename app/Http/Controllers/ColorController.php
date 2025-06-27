@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Jyj1993126\NameThatColorPhp\ColorNamer;
-use Ntc;
+use ourcodeworld\NameThatColor\ColorInterpreter;
 
 class ColorController extends Controller
 {
@@ -23,16 +22,14 @@ class ColorController extends Controller
         $endpoint = config('services.azure_cs.endpoint');
         $url      = rtrim($endpoint, '/') . '/vision/v3.2/analyze?visualFeatures=Color';
 
-        // 3) Call Azure REST API
-$response = Http::withHeaders([
-    'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
-    'Content-Type'             => 'application/octet-stream',
-])
-->timeout(30)
-->withBody($imageBytes, 'application/octet-stream')
-->post($url);
-
-
+        // 3) Call Azure REST API with raw body (no JSON encoding)
+        $response = Http::withHeaders([
+                'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
+                'Content-Type'             => 'application/octet-stream',
+            ])
+            ->timeout(30)
+            ->withBody($imageBytes, 'application/octet-stream')
+            ->post($url);
 
         if (! $response->ok()) {
             return response()->json([
@@ -44,20 +41,19 @@ $response = Http::withHeaders([
 
         // 4) Extract Azure’s dominant color info
         $hexDetected = $data['color']['dominantColorForeground'] ?? null;   // e.g. "#336699"
-        $hex = ltrim($hexDetected, '#');
-        $closestName = Ntc::getInstance('en')->name($hex);
-
         $aiName      = $data['color']['dominantColors'][0] ?? null;         // e.g. "Blue"
 
-        // 5) Use name-that-color to get a human-friendly match
-        // $namer   = new ColorNamer();
-        // $closest = $namer->name($hexDetected);
+        // 5) Use name-that-color to get closest hex, name, and exact-match
+        $interpreter = new ColorInterpreter();
+        $closest     = $interpreter->name(ltrim($hexDetected, '#'));
 
         // 6) Return JSON payload
         return response()->json([
             'hex_detected'    => $hexDetected,
             'ai_generic_name' => $aiName,
-            'closest_name'    => $closestName,
+            'closest_hex'     => $closest['hex'],
+            'closest_name'    => $closest['name'],
+            'exact_match'     => $closest['exact'],
         ]);
     }
 }
