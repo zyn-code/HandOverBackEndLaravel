@@ -26,7 +26,11 @@ class ColorController extends Controller
         $response = Http::withHeaders([
             'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
             'Content-Type'             => 'application/octet-stream',
-        ])->timeout(30)->post($url, $imageBytes);
+        ])
+        ->timeout(30)
+        ->withBody($imageBytes, 'application/octet-stream')
+        ->post($url);
+
 
         if (! $response->ok()) {
             return response()->json([
