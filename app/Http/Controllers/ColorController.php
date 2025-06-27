@@ -23,13 +23,14 @@ class ColorController extends Controller
         $url      = rtrim($endpoint, '/') . '/vision/v3.2/analyze?visualFeatures=Color';
 
         // 3) Call Azure REST API
-        $response = Http::withHeaders([
-            'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
-            'Content-Type'             => 'application/octet-stream',
-        ])
-        ->timeout(30)
-        ->withBody($imageBytes, 'application/octet-stream')
-        ->post($url);
+$response = Http::withHeaders([
+    'Ocp-Apim-Subscription-Key' => config('services.azure_cs.key'),
+    'Content-Type'             => 'application/octet-stream',
+])
+->timeout(30)
+->withBody($imageBytes, 'application/octet-stream')
+->post($url);
+
 
 
         if (! $response->ok()) {
