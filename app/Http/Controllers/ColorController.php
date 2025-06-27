@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Jyj1993126\NameThatColorPhp\ColorNamer;
+use Ntc;
 
 class ColorController extends Controller
 {
@@ -43,19 +44,20 @@ $response = Http::withHeaders([
 
         // 4) Extract Azure’s dominant color info
         $hexDetected = $data['color']['dominantColorForeground'] ?? null;   // e.g. "#336699"
+        $hex = ltrim($hexDetected, '#');
+        $closestName = Ntc::getInstance('en')->name($hex);
+
         $aiName      = $data['color']['dominantColors'][0] ?? null;         // e.g. "Blue"
 
         // 5) Use name-that-color to get a human-friendly match
-        $namer   = new ColorNamer();
-        $closest = $namer->name($hexDetected);
+        // $namer   = new ColorNamer();
+        // $closest = $namer->name($hexDetected);
 
         // 6) Return JSON payload
         return response()->json([
             'hex_detected'    => $hexDetected,
             'ai_generic_name' => $aiName,
-            'closest_hex'     => $closest['hex'],
-            'closest_name'    => $closest['name'],
-            'exact_match'     => $closest['exact'],
+            'closest_name'    => $closestName,
         ]);
     }
 }
