@@ -16,7 +16,7 @@ use App\Models\HomeCategory;
 use App\Models\PropertyCondition;
 use App\Models\BuildingMaterial;
 use App\Http\Controllers\AdvertisementController;
-use App\Http\Controllers\Api\ColorController;
+use App\Http\Controllers\ColorController;
 
 
 /*
