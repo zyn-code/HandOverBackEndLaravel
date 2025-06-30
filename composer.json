@@ -7,9 +7,12 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
+        "jyj1993126/name-that-color-php": "^1.1",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+        "league/color-extractor": "^0.4.0",
+        "ourcodeworld/name-that-color": "dev-master",
         "pragmarx/google2fa-laravel": "^2.3",
         "tymon/jwt-auth": "^2.2"
     },

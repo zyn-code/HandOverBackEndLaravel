@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28563e8d8bc1291419e1038ae4820c82",
+    "content-hash": "4ed7e4c146f15bd2cb68a2d56930a672",
     "packages": [
         {
             "name": "brick/math",
@@ -1055,6 +1055,42 @@
             "time": "2025-02-03T10:55:03+00:00"
         },
         {
+            "name": "jyj1993126/name-that-color-php",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jyj1993126/name-that-color-php.git",
+                "reference": "265b0e909160cdf2fa760bc187571c3a3372bcf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jyj1993126/name-that-color-php/zipball/265b0e909160cdf2fa760bc187571c3a3372bcf9",
+                "reference": "265b0e909160cdf2fa760bc187571c3a3372bcf9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JYJ1993126\\NameThatColor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "LeonJ",
+                    "email": "jyj1993126@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/jyj1993126/name-that-color-php/issues",
+                "source": "https://github.com/jyj1993126/name-that-color-php/tree/1.1"
+            },
+            "time": "2017-09-25T02:21:54+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v10.48.29",
             "source": {
@@ -1649,6 +1685,67 @@
                 }
             ],
             "time": "2023-01-02T13:28:00+00:00"
+        },
+        {
+            "name": "league/color-extractor",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/color-extractor.git",
+                "reference": "21fcac6249c5ef7d00eb83e128743ee6678fe505"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/color-extractor/zipball/21fcac6249c5ef7d00eb83e128743ee6678fe505",
+                "reference": "21fcac6249c5ef7d00eb83e128743ee6678fe505",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "replace": {
+                "matthecat/colorextractor": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "ext-curl": "To download images from remote URLs if allow_url_fopen is disabled for security reasons"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\ColorExtractor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathieu Lechat",
+                    "email": "math.lechat@gmail.com",
+                    "homepage": "http://matthecat.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extract colors from an image as a human would do.",
+            "homepage": "https://github.com/thephpleague/color-extractor",
+            "keywords": [
+                "color",
+                "extract",
+                "human",
+                "image",
+                "palette"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/color-extractor/issues",
+                "source": "https://github.com/thephpleague/color-extractor/tree/0.4.0"
+            },
+            "time": "2022-09-24T15:57:16+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2527,6 +2624,55 @@
                 }
             ],
             "time": "2024-11-21T10:36:35+00:00"
+        },
+        {
+            "name": "ourcodeworld/name-that-color",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ourcodeworld/name-that-color.git",
+                "reference": "758b1f9b4b521da63f0ae4226e80cae620b0f648"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ourcodeworld/name-that-color/zipball/758b1f9b4b521da63f0ae4226e80cae620b0f648",
+                "reference": "758b1f9b4b521da63f0ae4226e80cae620b0f648",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ourcodeworld\\NameThatColor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "Carlos Delgado",
+                    "email": "dev@ourcodeworld.com",
+                    "homepage": "https://ourcodeworld.com"
+                }
+            ],
+            "description": "A non-official PHP port of the NTC JS library to find out the name of the closest matching color.",
+            "keywords": [
+                "color converted",
+                "hex",
+                "hsl",
+                "name that color",
+                "rgb"
+            ],
+            "support": {
+                "issues": "https://github.com/ourcodeworld/name-that-color/issues",
+                "source": "https://github.com/ourcodeworld/name-that-color/tree/master"
+            },
+            "time": "2018-08-03T18:14:49+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -8593,7 +8739,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "ourcodeworld/name-that-color": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
