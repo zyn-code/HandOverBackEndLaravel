@@ -25,6 +25,9 @@ class TaskController extends Controller
         'car_brand'    => 'nullable|string',
         'car_category' => 'nullable|string',
         'fuel_type'    => 'nullable|string',
+        'color'    => 'nullable|string',
+        'damaged_parts'    => 'nullable|string',
+
     ]);
 
     $task = Task::create([
@@ -38,6 +41,8 @@ class TaskController extends Controller
         'car_brand'    => $request->car_brand,
         'car_category' => $request->car_category,
         'fuel_type'    => $request->fuel_type,
+        'color'    => $request->color,
+        'damaged_parts'    => $request->damaged_parts,
     ]);
 
     return response()->json(['message' => 'Task created successfully', 'task' => $task]);

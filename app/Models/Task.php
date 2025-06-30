@@ -21,6 +21,8 @@ class Task extends Model
         'car_brand',
         'car_category',
         'fuel_type',
+        'color',
+        'damaged_parts'
     ];
 
     public function user()
