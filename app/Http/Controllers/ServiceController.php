@@ -35,4 +35,17 @@ class ServiceController extends Controller
         $services = EmergencyService::all();
         return response()->json($services);
     }
+    public function damagedScans(Request $request)
+    {
+        $userId = $request->user()->id;
+
+        $services = BuildingService::whereHas('tasks', function($q) use ($userId) {
+            $q->where('user_id', $userId)
+              ->whereNotNull('damaged_parts');
+        })->get();
+
+        return response()->json([
+            'data' => $services
+        ]);
+    }
 }
