@@ -67,4 +67,34 @@ class AuthController extends Controller
             ], 500);
         }
     }
+    public function changePassword(Request $request): JsonResponse
+    {
+        // 1. Validation des champs
+        $request->validate([
+            'old_password'          => 'required|string',
+            'password'              => 'required|string|min:6|confirmed',
+            // 'password_confirmation' est implicite grâce à « confirmed »
+        ]);
+
+        // 2. Récupération de l'utilisateur authentifié
+        $user = auth('api')->user();
+
+        // 3. Vérification de l'ancien mot de passe
+        if (! Hash::check($request->old_password, $user->password)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'L\'ancien mot de passe ne correspond pas.'
+            ], 400);
+        }
+
+        // 4. Mise à jour du mot de passe
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        // 5. Réponse réussie
+        return response()->json([
+            'success' => true,
+            'message' => 'Mot de passe mis à jour avec succès.'
+        ]);
+    }
 }
