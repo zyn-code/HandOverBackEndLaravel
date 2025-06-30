@@ -24,4 +24,22 @@ class AdvertisementController extends Controller
         $ads = Advertisement::latest()->get();
         return response()->json($ads);
     }
+    public function updateStatus(Request $request, Advertisement $ad)
+{
+    // Validation minimale
+    $data = $request->validate([
+        'status'   => 'required|in:new,pending,approved,rejected',
+        'quantity' => 'nullable|integer|min:1',
+    ]);
+
+    // Mettre à jour éventuellement la quantité acceptée
+    if (isset($data['quantity'])) {
+        $ad->quantity = $data['quantity'];
+    }
+
+    $ad->status = $data['status'];
+    $ad->save();
+
+    return response()->json($ad);
+}
 }

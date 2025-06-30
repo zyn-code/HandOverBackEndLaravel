@@ -6,23 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::table('advertisements', function (Blueprint $table) {
-            //
-        });
-    }
+  public function up()
+{
+    Schema::table('advertisements', function (Blueprint $table) {
+        $table->string('status')->default('new')->after('price');
+    });
+}
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::table('advertisements', function (Blueprint $table) {
-            //
-        });
-    }
+public function down()
+{
+    Schema::table('advertisements', function (Blueprint $table) {
+        $table->dropColumn('status');
+    });
+}
+
 };

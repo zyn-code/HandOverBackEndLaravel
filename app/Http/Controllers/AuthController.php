@@ -83,7 +83,7 @@ class AuthController extends Controller
         if (! Hash::check($request->old_password, $user->password)) {
             return response()->json([
                 'success' => false,
-                'message' => 'L\'ancien mot de passe ne correspond pas.'
+                'message' => 'The old password does not match.'
             ], 400);
         }
 
@@ -94,7 +94,7 @@ class AuthController extends Controller
         // 5. Réponse réussie
         return response()->json([
             'success' => true,
-            'message' => 'Mot de passe mis à jour avec succès.'
+            'message' => '“Password updated successfully.'
         ]);
     }
 }

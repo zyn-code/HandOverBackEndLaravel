@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Advertisement extends Model
 {
-    protected $fillable = ['services', 'quantity', 'price'];
+    protected $fillable = ['services', 'quantity', 'price','status'];
 }
