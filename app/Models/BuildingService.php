@@ -29,7 +29,12 @@ class BuildingService extends Model
         'icon_url',         
     ];
     public function getIconUrlAttribute(): string
-{
-    return asset('Icons/' . $this->icon);  
-}
+    {
+        return asset('Icons/' . $this->icon);  
+    }
+
+    public function tasks()
+    {
+        return $this->hasMany(Task::class, 'service_id');
+    }
 }

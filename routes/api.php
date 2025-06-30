@@ -76,5 +76,6 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/advertisements', [AdvertisementController::class, 'index']);
     Route::patch('/advertisements/{ad}', [AdvertisementController::class, 'updateStatus']);
     Route::post('/change-password', [AuthController::class, 'changePassword']);
+    Route::get('/damaged-scans', [ServiceController::class, 'damagedScans']);
 
 });
