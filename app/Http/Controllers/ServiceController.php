@@ -13,6 +13,8 @@ use App\Models\VehicleService;
 use App\Models\EmergencyService;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
+use App\Models\Task;
+
 
 class ServiceController extends Controller
 {
@@ -39,13 +41,13 @@ class ServiceController extends Controller
     {
         $userId = $request->user()->id;
 
-        $services = BuildingService::whereHas('tasks', function($q) use ($userId) {
-            $q->where('user_id', $userId)
-              ->whereNotNull('damaged_parts');
-        })->get();
+        $tasks = Task::with('service')  
+        ->where('user_id', $userId)
+        ->whereNotNull('damaged_parts')
+        ->get();
 
         return response()->json([
-            'data' => $services
+            'data' => $tasks
         ]);
     }
 }
